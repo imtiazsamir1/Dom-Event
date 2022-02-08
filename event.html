@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+  </head>
+  <body>
+    <h1>Event nie cliclk bazi</h1>
+    <!-- just see his  -->
+    <button onclick="document.body.style.backgroundColor='yellow'">
+      click Me
+    </button>
+    <button onclick="makeRed()">Click Me: red</button>
+    <button id="make-blue-button">Click Me :Blue</button>
+    <button id="make-green-buton">Click Me:Green</button>
+    <button id="make-goldenrod">Click Me :Golden rod</button>
+    <button id="make-hotpink">Click Me : hotpink</button>
+    <button id="make-lightblue">Click Me: Light Blue</button>
+    <script src="event.js"></script>
+    <script>
+      document
+        .getElementById("make-lightblue")
+        .addEventListener("click", function () {
+          document.body.style.backgroundColor = "lightblue";
+        });
+    </script>
+  </body>
+</html>
